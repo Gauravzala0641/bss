@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Billing Page</title>
+    <link rel="stylesheet" href="billing-style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <h1>RaxenCloud</h1>
+            </div>
+        </nav>
+    </header>
+
+    <section class="billing">
+        <div class="billing-container">
+            <h2>Complete Your Payment</h2>
+            <p>Please provide your details to complete the payment process.</p>
+
+            <!-- QR Code for UPI Payment -->
+            <div class="upi-payment">
+                <h3>Scan the QR Code to Pay</h3>
+                <img src="your-upi-qr-code.png" alt="UPI Payment QR Code" class="qr-code">
+            </div>
+
+            <!-- Payment Screenshot Upload -->
+            <div class="payment-screenshot">
+                <h3>Upload Payment Screenshot</h3>
+                <p>Once you have confirmed the payment, upload a screenshot here.</p>
+                <input type="file" id="payment-screenshot" accept="image/*">
+                <button type="button" id="submit-screenshot" class="cta-button">Submit Payment Screenshot</button>
+            </div>
+
+            <button type="submit" class="cta-button">Confirm Payment</button>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 RaxenCloud. All Rights Reserved.</p>
+    </footer>
+
+    <script src="billing.js"></script>
+</body>
+</html>
